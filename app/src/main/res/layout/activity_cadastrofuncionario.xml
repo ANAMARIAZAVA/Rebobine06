@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cadastrofuncionario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1523"
+    tools:context=".ActivityClasses.cadastrofuncionario">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@mipmap/logoazul" />
+
+            <TextView
+                android:id="@+id/rotulotitulocadfunc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elegantTextHeight="false"
+                android:text="REBOBINE"
+                android:textColor="#FEC007"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layerCadastroCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A1A1A"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/rotuloNomeFunc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Nome Completo"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nomeRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#1A1A1A"
+                android:backgroundTint="#FFC107"
+                android:hint="Digite o nome completo"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#888888" />
+
+            <TextView
+                android:id="@+id/rotuloEmailFunc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Email"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/emailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#1A1A1A"
+                android:backgroundTint="#FFC107"
+                android:hint="Digite o email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#888888" />
+
+
+            <TextView
+                android:id="@+id/rotuloDataNascimentoFunc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Senha"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/senhaRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="#1A1A1A"
+                android:backgroundTint="#FFC107"
+                android:hint="Digite sua Senha"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#888888" />
+
+            <Button
+                android:id="@+id/btCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFC107"
+                android:text="CADASTRAR FUNCIONÁRIO"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Logo do Aplicativo -->
+
+    <!-- Formulário de Cadastro de Cliente -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
